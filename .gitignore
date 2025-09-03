@@ -52,3 +52,23 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vs
+*.vsworkspace
+*.vsix
+*.vscode
+
+# Test logs
+TestStore/
+*.testlog
+testlog.manifest
+
+# Visual Studio cache / layout files
+*.vsidx
+*.json
+slnx.sqlite
