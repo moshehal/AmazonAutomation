@@ -16,9 +16,9 @@ namespace AmazonAutomation.Tests
         public void AddNewUserHappyFlow()
         {
             #region TestParams
-            string email = "moshenav6365+5@gmail.com";
+            string email = "example@example.com";
             string password = "123456";
-            string username = "Moshe";
+            string username = "Example";
             #endregion
 
             var mainPage = NavigateTo("https://www.amazon.com/");
@@ -34,12 +34,6 @@ namespace AmazonAutomation.Tests
             verificationPage.FillVerificationCode(verificationCode);
             var marketPage = verificationPage.ClickContinue();
             Assert.That(marketPage.IsUserLoggedIn(username), "The user logged in to the system");
-        }
-
-        [Test]
-        public void AddNewAccountHappyFlow()
-        {
-            NavigateTo("https://www.amazon.com/");
         }
 
         [TearDown]
