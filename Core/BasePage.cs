@@ -36,7 +36,10 @@ namespace AmazonAutomation.Core
 
         public string GetVerificationCode()
         {
-            //Need to add get the code from email.
+            /*Need to add:
+            -get the email/ sms.
+            - extract the code.
+            - return it to the function.*/
             return "";
         }
     }
